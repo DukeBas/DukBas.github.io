@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
+    <h1>Hi everyone</h1>
     <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
@@ -18,8 +18,7 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+      <Link to="/page-2/">Go to page 3d demo</Link> <br />
     </p>
   </Layout>
 )
