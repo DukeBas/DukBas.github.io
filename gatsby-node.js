@@ -1,5 +1,5 @@
 // This script ensures Gatsby builds to a directory for github pages
-const targetFolder = "docs";
+const targetFolder = "docs"
 const path = require("path")
 const fs = require("fs")
 
@@ -14,7 +14,10 @@ exports.onPreInit = () => {
 }
 
 exports.onPostBuild = () => {
-  fs.renameSync(path.join(__dirname, "public"), path.join(__dirname, targetFolder))
+  fs.renameSync(
+    path.join(__dirname, "public"),
+    path.join(__dirname, targetFolder)
+  )
   fs.renameSync(
     path.join(__dirname, "public_dev"),
     path.join(__dirname, "public")
