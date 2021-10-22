@@ -12,6 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+const contentWidth = 960;
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -25,11 +27,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header maxWidth={contentWidth}/>
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: contentWidth,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
