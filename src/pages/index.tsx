@@ -1,5 +1,7 @@
 
 const IndexPage = () => (
+  <>
+  </>
 
 // <!DOCTYPE HTML>
 // <!--
