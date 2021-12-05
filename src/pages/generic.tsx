@@ -8,14 +8,6 @@ const GenericPage = ({ children }) => {
   return (
     <>
       <div id="wrapper">
-
-        {/* //// PUT IN HTML HEADER */}
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript>
-          <link rel="stylesheet" href="assets/css/noscript.css" />
-        </noscript>
-        {/* //// END */}
-        
         <Header />
         <Navigation />
         {/* Insert child elements into page here */}
