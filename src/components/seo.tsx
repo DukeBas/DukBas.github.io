@@ -70,13 +70,9 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      {/* This does not work */}
-      <link rel="stylesheet" href="assets/css/main.css" />
-      <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-      </noscript>
-    </Helmet>
+      // link={["assets/css/main.css"].map(link => ({ rel: "stylesheet", href: link }))}
+      // noscript={["assets/css/noscript.css"].map(link => ({ rel: "stylesheet", href: link }))}
+    />
   )
 }
 
