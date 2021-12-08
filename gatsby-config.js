@@ -31,6 +31,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        src: [
+          "/jquery.min.js",
+          "jquery.scrollex.min.js",
+          "jquery.scrolly.min.js",
+          "browser.min.js",
+          "breakpoints.min.js",
+          "util.js",
+          "main.js",
+        ],
+      },
+    },
     "gatsby-plugin-postcss",
   ],
 }
